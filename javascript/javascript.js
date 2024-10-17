@@ -73,7 +73,6 @@ console.log (number2, number3, number4);
 
 
 
-
 /****************************************************************************** 
 
 ASSIGNMENT 4
@@ -84,23 +83,13 @@ Write an IF/ELSE conditional statement that checks that userName isn't
 
 empty(""), that the user age is 18+, and that userIsBlocked is false. 
 
-
-
 (HINT: Use the && (logical AND) to check all 3 in one IF statement)
-
-
 
 If all of these conditions are true, change the userIsLoggedIn variable to true 
 
 and the goToPage variable to "/home" then console.log a welcome message. 
 
-
-
-If any of the conditions for logging in are not met, console.log an error 
-
-message.
-
-
+If any of the conditions for logging in are not met, console.log an error message.
 
 Try changing the values of the variables to make sure your IF/ELSE conditional
 
@@ -108,27 +97,26 @@ can handle all cases correctly
 
 ******************************************************************************/
 
+let userName = "Test";
 
 
-
-let userName = "";
-
-
-let userAge = 18;
-
+let userAge = 19;
 
 let userIsLoggedIn = false;
 
-
 let userIsBlocked = false;
-
 
 let goToPage = "";
 
 
-
-//your code here
-
+if (userName != "", userAge>= 18, userIsBlocked=false){
+    userIsLoggedIn=True;
+    goToPage = "/home";
+    console.log ("Welcome");
+}
+else {
+console.log("Error");
+}
 
 
 /******************************************************************************
