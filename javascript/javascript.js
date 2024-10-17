@@ -139,10 +139,6 @@ to see that your conditional is working.
 
 ******************************************************************************/
 
-
-
-
-
 const userMale = false;
 
 
