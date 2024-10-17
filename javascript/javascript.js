@@ -109,7 +109,7 @@ let userIsBlocked = false;
 let goToPage = "";
 
 // != "" sjekker om navnet er IKKE tomt. userAge >=(greater or equals to)18. ==false. Kunne gjort !userisBlocked istedenfor ==false. Men det blir lettere for meg å se med == false.
-if (userName != "" && userAge>= 18 && userIsBlocked==false){
+if (userName != "" && userAge>= 18 && userIsBlocked===false){
     //userIsLoggedIn=True er tydligvis feil. 
     userIsLoggedIn=true;
     goToPage = "/home";
@@ -138,10 +138,11 @@ Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working.
 
 ******************************************************************************/
+// Coditional testet, fungerer
+const userMale = true;
 
-const userMale = false;
+// consten userTitle sjekker om userMale er sant (?) eller ikke, og ser på de to på hver sin side av : i forhold til om den er sant eller ikke (Venstre = true, høyre = false)
+const userTitle = userMale ? 'Mr.' : 'Mrs.';
 
+    console.log (userTitle);
 
-
-
-//your code here
