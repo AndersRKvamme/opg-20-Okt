@@ -97,24 +97,26 @@ can handle all cases correctly
 
 ******************************************************************************/
 
-let userName = "Test";
-
-
+// Er testet uten navn og med
+let userName = "Testerman";
+// er tested med alder under og over 18
 let userAge = 19;
 
 let userIsLoggedIn = false;
-
+// Er tested med false eller true
 let userIsBlocked = false;
 
 let goToPage = "";
 
-
-if (userName != "", userAge>= 18, userIsBlocked=false){
-    userIsLoggedIn=True;
+// != "" sjekker om navnet er IKKE tomt. userAge >=(greater or equals to)18. ==false. Kunne gjort !userisBlocked istedenfor ==false. Men det blir lettere for meg å se med == false.
+if (userName != "" && userAge>= 18 && userIsBlocked==false){
+    //userIsLoggedIn=True er tydligvis feil. 
+    userIsLoggedIn=true;
     goToPage = "/home";
     console.log ("Welcome");
 }
 else {
+    //Hvis parameterene over ikke er fulfilled, send dette.
 console.log("Error");
 }
 
@@ -123,19 +125,13 @@ console.log("Error");
 
 ASSIGNMENT 5
 
-
-
 Make a variable called userTitle and set the content equal to "Mr." if userMale 
 
 is true, or to "Mrs." if userMale is false. Use the TERNARY conditional to do 
 
 this:
 
-
-
 const variable = statement ? "this if true" : "this if not true"
-
-
 
 Try changing userMale to both true and false and console.log your new variable,
 
@@ -146,7 +142,9 @@ to see that your conditional is working.
 
 
 
+
 const userMale = false;
+
 
 
 
